@@ -10,11 +10,23 @@
 [credential]
         helper = osxkeychain
 [alias]
+        cp = cherry-pick
+        st = status -s
+        cl = clone
+        ci = commit
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
+        ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        # Show diff of last commit
+        dlc = diff --cached HEAD^
+        # Find a filepath in the codebase
+        f = "!git ls-files | grep -i"
+        # Show all these aliases
+        la = "!git config -l | grep alias | cut -c 7-"
 [color]
         diff = auto
         status = auto
@@ -31,3 +43,5 @@
         prompt = false
 [help]
         autocorrect = 1
+[push]
+	default = simple
