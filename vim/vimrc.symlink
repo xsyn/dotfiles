@@ -235,6 +235,8 @@ map <Leader>p <C-^> " Go to previous file
 " Ruby stuff ******************************************************************
 "compiler ruby         " Enable compiler support for ruby
 "map <F5> :!ruby %<CR>
+" ruby path if you are using rbenv
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 
 " Omni Completion *************************************************************
