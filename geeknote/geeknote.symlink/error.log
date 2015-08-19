@@ -1,0 +1,5 @@
+2015-08-13 12:02:34,622 oauth login 226 : Incorrect login or password
+2015-08-13 12:02:34,622 oauth login 229 : Target URL was not found in the response on login
+2015-08-13 12:26:45,454 oauth login 226 : Incorrect login or password
+2015-08-13 12:26:45,456 oauth login 229 : Target URL was not found in the response on login
+2015-08-19 13:20:13,099 geeknote wrapper 70 : Error: createNote : EDAMUserException(errorCode=11, parameter='Error processing document: Invalid a href attribute:')
